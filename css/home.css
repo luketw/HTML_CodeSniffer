@@ -14,7 +14,9 @@ background: #87d1f5;
 body {
  margin:0;
  min-width:1000px;
- font-family: 'helvetica', arial, sans-serif;
+ font-family: 'open sans', 'helvetica', arial, sans-serif;
+ 
+ letter-spacing: -0.05ex;
  color:#2e2d33;
  background: #ffffff repeat top left;
 }
