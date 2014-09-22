@@ -8,8 +8,7 @@ body {
  color:#2e2d33;
  background-color:#fbfbfb;
  min-width:820px;
- font: 15px 'open sans', 'helvetica','arial', sans-serif;
- letter-spacing: -0.05ex;
+ font: 15px 'helvetica','arial', sans-serif;
  line-height: 1.6em;
 }
 
@@ -382,7 +381,7 @@ div#side-nav > ul > ul > ul > li:before {
     content: '– ';
 }
 
-div#main-area {   
+div#main-area {
     border-left: 1px solid #d8d7d7;
     margin-left: 200px;
     padding: 0 2em;
