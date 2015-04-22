@@ -15,7 +15,7 @@ Version numbers have been applied retrospectively based on the size or significa
 the repository's [tags list](https://github.com/squizlabs/HTML_CodeSniffer/tags) relates the old
 pull number system to the new.
 
-## Version 2.0.2 (12 Nov 2014)
+## [](#2.0.2) Version 2.0.2 (12 Nov 2014)
 
 - **WCAG 2.0 (<abbr title="Success Criterion">SC</abbr> 1.3.1)**
   Rewrite "labelling inputs" code to take into account March 2014 changes
