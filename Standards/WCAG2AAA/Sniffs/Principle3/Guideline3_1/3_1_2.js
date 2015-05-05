@@ -38,7 +38,7 @@ window.HTMLCS.includedSniffs['WCAG2AAA.Principle3.Guideline3_1.3_1_2'] = {
         HTMLCS.addMessage(HTMLCS.NOTICE, top, 'Ensure that any change in language is marked using the lang and/or xml:lang attribute on an element, as appropriate.', 'H58');
 
         // Alias the SC 3.1.1 object, which contains our "valid language tag" test.
-        var sc3_1_1 = HTMLCS_WCAG2AAA_Sniffs_Principle3_Guideline3_1_3_1_1;
+        var sc3_1_1 = HTMLCS.getSniff('WCAG2AAA', 'Principle3.Guideline3_1.3_1_1');
 
         // Note, going one element beyond the end, so we can test the top element
         // (which doesn't get picked up by the above query). Instead of going off the

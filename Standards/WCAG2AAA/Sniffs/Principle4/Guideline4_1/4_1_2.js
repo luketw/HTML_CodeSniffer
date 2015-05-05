@@ -211,7 +211,7 @@ window.HTMLCS.includedSniffs['WCAG2AAA.Principle4.Guideline4_1.4_1_2'] = {
                     } else if (requiredName === 'label') {
                         // Label element. Re-use the label associating
                         // functions in SC 1.3.1.
-                        var hasLabel = HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_3_1_3_1.testLabelsOnInputs(element, top, true);
+                        var hasLabel = HTMLCS.getSniff('WCAG2AAA', 'Principle1.Guideline1_3.1_3_1').testLabelsOnInputs(element, top, true);
                         if (hasLabel !== false) {
                             found = true;
                             break;
