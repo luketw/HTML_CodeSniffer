@@ -13,6 +13,9 @@
 
 var HTMLCS = new function()
 {
+    this.includedStandards = {};
+    this.includedSniffs    = {};
+
     var _standards    = {};
     var _sniffs       = [];
     var _tags         = {};
@@ -307,7 +310,13 @@ var HTMLCS = new function()
 
         // See if the ruleset object is already included (eg. if minified).
         var parts   = standard.split('/');
-        var ruleSet = window['HTMLCS_' + parts[(parts.length - 2)]];
+        var ruleSet = window['HTMLCS'].includedStandards[parts[(parts.length - 2)]];
+
+        if (!ruleSet) {
+            // DEPRECATED: Try old standards name in global window space.
+            ruleSet = window['HTMLCS_' + parts[(parts.length - 2)]];
+        }
+
         if (ruleSet) {
             // Already included.
             _registerStandard(standard, callback, failCallback, options);
@@ -331,7 +340,11 @@ var HTMLCS = new function()
         var parts = standard.split('/');
 
         // Get a copy of the ruleset object.
-        var oldRuleSet = window['HTMLCS_' + parts[(parts.length - 2)]];
+        var oldRuleSet = window['HTMLCS'].includedStandards[parts[(parts.length - 2)]];
+        if (!oldRuleSet) {
+            // DEPRECATED: Try old standards name in global window space.
+            oldRuleSet = window['HTMLCS_' + parts[(parts.length - 2)]];
+        }
         var ruleSet    = {};
 
         for (var x in oldRuleSet) {
@@ -512,16 +525,17 @@ var HTMLCS = new function()
      * @returns {Object} The sniff object.
      */
     var _getSniff = function(standard, sniff) {
-        var name = 'HTMLCS_';
-        name    += _standards[standard].name + '_Sniffs_';
-        name    += sniff.split('.').join('_');
+        var sniffObj = window.HTMLCS.includedSniffs[standard + '.' + sniff];
 
-        if (!window[name]) {
+        if (!sniffObj) {
+            // DEPRECATED: Try old sniff name in global window space.
+            var oldSniffName = 'HTMLCS_' + standard + '_Sniffs_' + sniff.replace('.', '_');
+            sniffObj = window[oldSniffName];
             return null;
         }
 
-        window[name]._name = sniff;
-        return window[name];
+        sniffObj._name = sniff;
+        return sniffObj;
     };
 
     /**

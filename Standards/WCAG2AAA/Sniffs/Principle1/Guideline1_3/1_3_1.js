@@ -11,7 +11,7 @@
  *
  */
 
-var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_3_1_3_1 = {
+window.HTMLCS.includedSniffs['WCAG2AAA.Principle1.Guideline1_3.1_3_1'] = {
     _labelNames: null,
 
     register: function()

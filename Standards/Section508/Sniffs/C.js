@@ -11,7 +11,7 @@
  *
  */
 
-var HTMLCS_Section508_Sniffs_C = {
+window.HTMLCS.includedSniffs['Section508.C'] = {
     /**
      * Determines the elements to register for processing.
      *

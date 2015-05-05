@@ -493,7 +493,7 @@ var HTMLCSAuditor = new function()
             var standard     = standards[i];
             var option       = _doc.createElement('option');
             option.value     = standard;
-            option.innerHTML = window['HTMLCS_' + standard].name;
+            option.innerHTML = window.HTMLCS.includedStandards[standard].name;
 
             if (standard === _standard) {
                 option.selected = true;
@@ -753,8 +753,7 @@ var HTMLCSAuditor = new function()
 
         var typeClass     = _prefix + typeText.toLowerCase();
 
-        var standardObj = HTMLCS.util.getElementWindow(_doc)['HTMLCS_' + standard];
-        var standardObj = _top['HTMLCS_' + standard];
+        var standardObj = _top['HTMLCS'].includedStandards[standard];
         var msgInfo = [];
         if (standardObj.getMsgInfo) {
             msgInfo = standardObj.getMsgInfo(message.code);
@@ -1290,15 +1289,9 @@ var HTMLCSAuditor = new function()
     }
 
     this.getStandardList = function() {
-        var pattern   = /^HTMLCS_[^_]+$/;
         var standards = [];
-        for (i in window) {
-            if (pattern.test(i) === true) {
-                var standard = window[i];
-                if (standard.sniffs && standard.name) {
-                    standards.push(i.substr(7));
-                }
-            }
+        for (i in window.HTMLCS.includedStandards) {
+            standards.push(i);
         }
 
         return standards;
@@ -1316,7 +1309,7 @@ var HTMLCSAuditor = new function()
         var standards       = this.getStandardList();
         var standardsToLoad = [];
         for (var i = 0; i < standards.length; i++) {
-            if (!window['HTMLCS_' + standards[i]]) {
+            if (!window.HTMLCS.includedStandards[standards[i]]) {
                 standardsToLoad.push(standards[i]);
             }
         }

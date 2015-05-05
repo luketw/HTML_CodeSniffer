@@ -11,7 +11,7 @@
  *
  */
 
-var HTMLCS_WCAG2AAA_Sniffs_Principle2_Guideline2_4_2_4_6 = {
+window.HTMLCS.includedSniffs['WCAG2AAA.Principle2.Guideline2_4.2_4_6'] = {
     /**
      * Determines the elements to register for processing.
      *
