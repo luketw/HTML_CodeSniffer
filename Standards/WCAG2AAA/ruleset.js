@@ -12,8 +12,12 @@
  */
 
 HTMLCS.addStandard('WCAG2AAA', {
-    name: 'WCAG 2.0 Triple-A',
-    description: 'Web Content Accessibility Guidelines (WCAG) 2.0 AAA',
+    name: HTMLCS.loc._('WCAG 2.0 Triple-A'),
+    description: HTMLCS.loc._(
+        '<abbr title="%1">W3C</abbr> <a href="%2">Web Content Accessibility Guidelines (WCAG) 2.0</a>, checking all Success Criteria.',
+        HTMLCS.loc._('World Wide Web Consortium'),
+        'http://www.w3.org/TR/WCAG20'
+    ),
     sniffs: [
         'Principle1.Guideline1_1.1_1_1',
         'Principle1.Guideline1_2.1_2_1',
@@ -73,19 +77,19 @@ HTMLCS.addStandard('WCAG2AAA', {
     getMsgInfo: function(code) {
         var principles = {
             'Principle1': {
-                name: 'Perceivable',
+                name: HTMLCS.loc._('Perceivable'),
                 link: 'http://www.w3.org/TR/WCAG20/#perceivable'
                },
             'Principle2': {
-                name: 'Operable',
+                name: HTMLCS.loc._('Operable'),
                 link: 'http://www.w3.org/TR/WCAG20/#operable'
                },
             'Principle3': {
-                name: 'Understandable',
+                name: HTMLCS.loc._('Understandable'),
                 link: 'http://www.w3.org/TR/WCAG20/#understandable'
                },
             'Principle4': {
-                name: 'Robust',
+                name: HTMLCS.loc._('Robust'),
                 link: 'http://www.w3.org/TR/WCAG20/#robust'
                }
         }

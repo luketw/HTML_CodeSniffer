@@ -80,6 +80,19 @@
     user-select: none;
 }
 
+#HTMLCS-wrapper .HTMLCS-info {
+    position: absolute;
+    cursor: pointer;
+    height: 2.2em;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    left: 8px;
+    top: 5px;
+    color: #fff;
+    font: bold italic 15px "Serif";
+    text-transform: none;
+}
+
 #HTMLCS-wrapper .HTMLCS-close {
     position: absolute;
     cursor: pointer;
@@ -91,7 +104,8 @@
     width: 2.2em;
 }
 
-#HTMLCS-wrapper .HTMLCS-close:hover {
+#HTMLCS-wrapper .HTMLCS-close:hover,
+#HTMLCS-wrapper .HTMLCS-info:hover {
     opacity: 1;
     filter: none;
 }
@@ -833,15 +847,40 @@
 #HTMLCS-wrapper #HTMLCS-settings-use-standard label {
     color: #FFF;
     display: inline;
+    font-weight: normal;
 }
+
 #HTMLCS-wrapper #HTMLCS-settings-use-standard > select {
     float: right;
     margin-top: -0.1em;
+    margin-bottom: 5px;
 }
 
 #HTMLCS-wrapper #HTMLCS-settings-use-standard:after {
     clear: both;
     display: block;
+}
+
+#HTMLCS-wrapper #HTMLCS-settings-use-standard-description {
+    color: #AAA;
+    font-weight: normal;
+    clear: both;
+    padding: 5px 8px;
+    line-height: 1.2;
+    margin: -10px -8px;
+    border-radius: 0 0 4px 4px;
+    background-color: #333;
+    border-top: 1px solid #404040;
+}
+
+#HTMLCS-wrapper #HTMLCS-settings-use-standard-description a {
+    color: #FFF;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+#HTMLCS-wrapper #HTMLCS-settings-use-standard-description a:hover {
+    text-decoration: underline;
 }
 
 #HTMLCS-wrapper #HTMLCS-settings-use-standard {

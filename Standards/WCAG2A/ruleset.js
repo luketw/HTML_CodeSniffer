@@ -13,7 +13,11 @@
 
 HTMLCS.addStandard('WCAG2A', {
     name: 'WCAG 2.0 Single-A',
-    description: 'Web Content Accessibility Guidelines (WCAG) 2.0 A',
+    description: HTMLCS.loc._(
+        '<abbr title="%1">W3C</abbr> <a href="%2">Web Content Accessibility Guidelines (WCAG) 2.0</a>, checking level A Success Criteria only.',
+        HTMLCS.loc._('World Wide Web Consortium'),
+        'http://www.w3.org/TR/WCAG20'
+    ),
     sniffs: [
         {
             standard: 'WCAG2AAA',

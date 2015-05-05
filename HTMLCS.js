@@ -590,10 +590,11 @@ var HTMLCS = new function()
             // DEPRECATED: Try old sniff name in global window space.
             var oldSniffName = 'HTMLCS_' + stdName + '_Sniffs_' + sniff.replace('.', '_');
             sniffObj = window[oldSniffName];
-            return null;
         }
 
-        sniffObj._name = sniff;
+        if (sniffObj) {
+            sniffObj._name = sniff;
+        }
         return sniffObj;
     };
 
@@ -1540,7 +1541,7 @@ HTMLCS.loc = {
         if (typeof(self.availableLanguages[language]) !== "undefined") {
             self.language = language;
         }// End if
-        
+
     },// End setLanguage
 
     /**
