@@ -14,7 +14,7 @@
 HTMLCS.addStandard('Section508', {
     name: HTMLCS.loc._('U.S. Section 508'),
     description: HTMLCS.loc._(
-        'U.S. Rehabilitation Act Section 508: <a href="%1">"Web-based intranet and internet information and applications".',
+        'U.S. Rehabilitation Act Section 508: <a href="%1">"Web-based intranet and internet information and applications"</a>.',
         'http://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-section-508-standards/section-508-standards#22'
     ),
     sniffs: [
