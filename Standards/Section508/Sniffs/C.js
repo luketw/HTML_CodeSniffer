@@ -11,7 +11,7 @@
  *
  */
 
-window.HTMLCS.includedSniffs['Section508.C'] = {
+HTMLCS.addSniff('Section508', 'C', {
     /**
      * Determines the elements to register for processing.
      *
@@ -37,4 +37,4 @@ window.HTMLCS.includedSniffs['Section508.C'] = {
         HTMLCS.addMessage(HTMLCS.NOTICE, top, 'Ensure that any information conveyed using colour alone is also available without colour, such as through context or markup.', 'Colour');
 
     }
-};
+});

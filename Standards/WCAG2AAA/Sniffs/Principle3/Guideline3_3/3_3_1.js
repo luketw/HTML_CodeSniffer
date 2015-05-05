@@ -11,7 +11,7 @@
  *
  */
 
-window.HTMLCS.includedSniffs['WCAG2AAA.Principle3.Guideline3_3.3_3_1'] = {
+HTMLCS.addSniff('WCAG2AAA', 'Principle3.Guideline3_3.3_3_1', {
     /**
      * Determines the elements to register for processing.
      *
@@ -36,4 +36,4 @@ window.HTMLCS.includedSniffs['WCAG2AAA.Principle3.Guideline3_3.3_3_1'] = {
     {
         HTMLCS.addMessage(HTMLCS.NOTICE, element, 'If an input error is automatically detected in this form, check that the item(s) in error are identified and the error(s) are described to the user in text.', 'G83,G84,G85');
     }
-};
+});

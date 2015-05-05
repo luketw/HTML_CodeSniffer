@@ -11,7 +11,7 @@
  *
  */
 
-window.HTMLCS.includedSniffs['WCAG2AAA.Principle1.Guideline1_4.1_4_1'] = {
+HTMLCS.addSniff('WCAG2AAA', 'Principle1.Guideline1_4.1_4_1', {
     /**
      * Determines the elements to register for processing.
      *
@@ -37,4 +37,4 @@ window.HTMLCS.includedSniffs['WCAG2AAA.Principle1.Guideline1_4.1_4_1'] = {
         HTMLCS.addMessage(HTMLCS.NOTICE, top, 'Check that any information conveyed using colour alone is also available in text, or through other visual cues.', 'G14,G182');
 
     }
-};
+});

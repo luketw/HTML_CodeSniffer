@@ -11,7 +11,7 @@
  *
  */
 
-window.HTMLCS.includedSniffs['WCAG2AAA.Principle1.Guideline1_2.1_2_2'] = {
+HTMLCS.addSniff('WCAG2AAA', 'Principle1.Guideline1_2.1_2_2', {
     /**
      * Determines the elements to register for processing.
      *
@@ -42,4 +42,4 @@ window.HTMLCS.includedSniffs['WCAG2AAA.Principle1.Guideline1_2.1_2_2'] = {
         HTMLCS.addMessage(HTMLCS.NOTICE, element, 'If this embedded object contains pre-recorded synchronised media and is not provided as an alternative for text content, check that captions are provided for audio content.', 'G87,G93');
 
     }
-};
+});

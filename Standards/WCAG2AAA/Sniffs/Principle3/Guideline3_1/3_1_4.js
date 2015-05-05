@@ -11,7 +11,7 @@
  *
  */
 
-window.HTMLCS.includedSniffs['WCAG2AAA.Principle3.Guideline3_1.3_1_4'] = {
+HTMLCS.addSniff('WCAG2AAA', 'Principle3.Guideline3_1.3_1_4', {
     /**
      * Determines the elements to register for processing.
      *
@@ -37,4 +37,4 @@ window.HTMLCS.includedSniffs['WCAG2AAA.Principle3.Guideline3_1.3_1_4'] = {
         HTMLCS.addMessage(HTMLCS.NOTICE, top, 'Check that a mechanism for identifying the expanded form or meaning of abbreviations is available.', 'G102,G55,G62,H28,G97');
 
     }
-};
+});

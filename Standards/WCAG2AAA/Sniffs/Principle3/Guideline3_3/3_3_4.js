@@ -11,7 +11,7 @@
  *
  */
 
-window.HTMLCS.includedSniffs['WCAG2AAA.Principle3.Guideline3_3.3_3_4'] = {
+HTMLCS.addSniff('WCAG2AAA', 'Principle3.Guideline3_3.3_3_4', {
     /**
      * Determines the elements to register for processing.
      *
@@ -36,4 +36,4 @@ window.HTMLCS.includedSniffs['WCAG2AAA.Principle3.Guideline3_3.3_3_4'] = {
     {
         HTMLCS.addMessage(HTMLCS.NOTICE, element, 'If this form would bind a user to a financial or legal commitment, modify/delete user-controllable data, or submit test responses, ensure that submissions are either reversible, checked for input errors, and/or confirmed by the user.', 'G98,G99,G155,G164,G168.LegalForms');
     }
-};
+});

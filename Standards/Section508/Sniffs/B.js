@@ -11,7 +11,7 @@
  *
  */
 
-window.HTMLCS.includedSniffs['Section508.B'] = {
+HTMLCS.addSniff('Section508', 'B', {
     /**
      * Determines the elements to register for processing.
      *
@@ -44,4 +44,4 @@ window.HTMLCS.includedSniffs['Section508.B'] = {
         HTMLCS.addMessage(HTMLCS.NOTICE, element, 'For multimedia containing synchronised audio and video, ensure synchronised captions are provided for the audio portion.', 'Captions');
 
     }
-};
+});

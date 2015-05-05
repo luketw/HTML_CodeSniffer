@@ -11,7 +11,7 @@
  *
  */
 
-window.HTMLCS.includedSniffs['WCAG2AAA.Principle2.Guideline2_3.2_3_2'] = {
+HTMLCS.addSniff('WCAG2AAA', 'Principle2.Guideline2_3.2_3_2', {
     /**
      * Determines the elements to register for processing.
      *
@@ -37,4 +37,4 @@ window.HTMLCS.includedSniffs['WCAG2AAA.Principle2.Guideline2_3.2_3_2'] = {
         HTMLCS.addMessage(HTMLCS.NOTICE, top, 'Check that no component of the content flashes more than three times in any 1-second period.', 'G19');
 
     }
-};
+});

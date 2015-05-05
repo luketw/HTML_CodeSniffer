@@ -11,7 +11,7 @@
  *
  */
 
-window.HTMLCS.includedSniffs['Section508.I'] = {
+HTMLCS.addSniff('Section508', 'I', {
     /**
      * Determines the elements to register for processing.
      *
@@ -50,4 +50,4 @@ window.HTMLCS.includedSniffs['Section508.I'] = {
             HTMLCS.addMessage(HTMLCS.ERROR, top, 'This ' + nodeName + ' element is missing title text. Frames should be titled with text that facilitates frame identification and navigation.', 'Frames');
         }
     }
-};
+});

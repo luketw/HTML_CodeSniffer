@@ -11,8 +11,8 @@
  *
  */
 
-window.HTMLCS.includedStandards['Section508'] = {
-    name: 'Section508',
+HTMLCS.addStandard('Section508', {
+    name: 'Section 508',
     description: 'U.S. Section 508 Standard',
     sniffs: [
         'A',
@@ -40,4 +40,4 @@ window.HTMLCS.includedStandards['Section508'] = {
 
         return retval;
     }
-};
+});

@@ -11,7 +11,7 @@
  *
  */
 
-window.HTMLCS.includedSniffs['WCAG2AAA.Principle3.Guideline3_1.3_1_3'] = {
+HTMLCS.addSniff('WCAG2AAA', 'Principle3.Guideline3_1.3_1_3', {
     /**
      * Determines the elements to register for processing.
      *
@@ -37,4 +37,4 @@ window.HTMLCS.includedSniffs['WCAG2AAA.Principle3.Guideline3_1.3_1_3'] = {
         HTMLCS.addMessage(HTMLCS.NOTICE, top, 'Check that there is a mechanism available for identifying specific definitions of words or phrases used in an unusual or restricted way, including idioms and jargon.', 'H40,H54,H60,G62,G70');
 
     }
-};
+});

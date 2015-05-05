@@ -11,7 +11,7 @@
  *
  */
 
-window.HTMLCS.includedSniffs['WCAG2AAA.Principle2.Guideline2_4.2_4_5'] = {
+HTMLCS.addSniff('WCAG2AAA', 'Principle2.Guideline2_4.2_4_5', {
     /**
      * Determines the elements to register for processing.
      *
@@ -37,4 +37,4 @@ window.HTMLCS.includedSniffs['WCAG2AAA.Principle2.Guideline2_4.2_4_5'] = {
         HTMLCS.addMessage(HTMLCS.NOTICE, element, 'If this Web page is not part of a linear process, check that there is more than one way of locating this Web page within a set of Web pages.', 'G125,G64,G63,G161,G126,G185');
 
     }
-};
+});

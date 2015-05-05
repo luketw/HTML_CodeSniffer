@@ -11,7 +11,7 @@
  *
  */
 
-window.HTMLCS.includedSniffs['WCAG2AAA.Principle2.Guideline2_2.2_2_5'] = {
+HTMLCS.addSniff('WCAG2AAA', 'Principle2.Guideline2_2.2_2_5', {
     /**
      * Determines the elements to register for processing.
      *
@@ -37,4 +37,4 @@ window.HTMLCS.includedSniffs['WCAG2AAA.Principle2.Guideline2_2.2_2_5'] = {
         HTMLCS.addMessage(HTMLCS.NOTICE, element, 'If this Web page is part of a set of Web pages with an inactivity time limit, check that an authenticated user can continue the activity without loss of data after re-authenticating.', 'G105,G181');
 
     }
-};
+});

@@ -11,7 +11,7 @@
  *
  */
 
-window.HTMLCS.includedSniffs['WCAG2AAA.Principle1.Guideline1_4.1_4_7'] = {
+HTMLCS.addSniff('WCAG2AAA', 'Principle1.Guideline1_4.1_4_7', {
     /**
      * Determines the elements to register for processing.
      *
@@ -43,4 +43,4 @@ window.HTMLCS.includedSniffs['WCAG2AAA.Principle1.Guideline1_4.1_4_7'] = {
         HTMLCS.addMessage(HTMLCS.NOTICE, element, 'For pre-recorded audio-only content in this element that is primarily speech (such as narration), any background sounds should be muteable, or be at least 20 dB (or about 4 times) quieter than the speech.', 'G56');
 
     }
-};
+});

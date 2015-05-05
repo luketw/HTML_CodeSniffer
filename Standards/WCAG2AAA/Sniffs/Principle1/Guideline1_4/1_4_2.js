@@ -11,7 +11,7 @@
  *
  */
 
-window.HTMLCS.includedSniffs['WCAG2AAA.Principle1.Guideline1_4.1_4_2'] = {
+HTMLCS.addSniff('WCAG2AAA', 'Principle1.Guideline1_4.1_4_2', {
     /**
      * Determines the elements to register for processing.
      *
@@ -44,4 +44,4 @@ window.HTMLCS.includedSniffs['WCAG2AAA.Principle1.Guideline1_4.1_4_2'] = {
         HTMLCS.addMessage(HTMLCS.NOTICE, top, 'If this element contains audio that plays automatically for longer than 3 seconds, check that there is the ability to pause, stop or mute the audio.', 'F23');
 
     }
-};
+});

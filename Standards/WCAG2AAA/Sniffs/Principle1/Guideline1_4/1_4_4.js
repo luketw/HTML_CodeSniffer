@@ -11,7 +11,7 @@
  *
  */
 
-window.HTMLCS.includedSniffs['WCAG2AAA.Principle1.Guideline1_4.1_4_4'] = {
+HTMLCS.addSniff('WCAG2AAA', 'Principle1.Guideline1_4.1_4_4', {
     /**
      * Determines the elements to register for processing.
      *
@@ -37,4 +37,4 @@ window.HTMLCS.includedSniffs['WCAG2AAA.Principle1.Guideline1_4.1_4_4'] = {
         HTMLCS.addMessage(HTMLCS.NOTICE, top, 'Check that text can be resized without assistive technology up to 200 percent without loss of content or functionality.', 'G142');
 
     }
-};
+});

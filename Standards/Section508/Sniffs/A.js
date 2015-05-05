@@ -11,7 +11,7 @@
  *
  */
 
-window.HTMLCS.includedSniffs['Section508.A'] = {
+HTMLCS.addSniff('Section508', 'A', {
     /**
      * Determines the elements to register for processing.
      *
@@ -325,4 +325,4 @@ window.HTMLCS.includedSniffs['Section508.A'] = {
             HTMLCS.addMessage(HTMLCS.NOTICE, errors.applet.generalAlt[i], 'Check that short (and if appropriate, long) text alternatives are available for non-text content that serve the same purpose and present the same information.', 'Applet.GeneralAlt');
         }
     }
-};
+});

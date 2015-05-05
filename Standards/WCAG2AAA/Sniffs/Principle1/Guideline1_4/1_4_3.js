@@ -11,7 +11,7 @@
  *
  */
 
-window.HTMLCS.includedSniffs['WCAG2AAA.Principle1.Guideline1_4.1_4_3'] = {
+HTMLCS.addSniff('WCAG2AAA', 'Principle1.Guideline1_4.1_4_3', {
     /**
      * Determines the elements to register for processing.
      *
@@ -87,4 +87,4 @@ window.HTMLCS.includedSniffs['WCAG2AAA.Principle1.Guideline1_4.1_4_3'] = {
             }//end for
         }//end if
     }
-};
+});

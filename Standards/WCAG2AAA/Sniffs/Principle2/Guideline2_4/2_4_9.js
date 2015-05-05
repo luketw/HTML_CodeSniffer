@@ -11,7 +11,7 @@
  *
  */
 
-window.HTMLCS.includedSniffs['WCAG2AAA.Principle2.Guideline2_4.2_4_9'] = {
+HTMLCS.addSniff('WCAG2AAA', 'Principle2.Guideline2_4.2_4_9', {
     /**
      * Determines the elements to register for processing.
      *
@@ -37,4 +37,4 @@ window.HTMLCS.includedSniffs['WCAG2AAA.Principle2.Guideline2_4.2_4_9'] = {
         HTMLCS.addMessage(HTMLCS.NOTICE, element, 'Check that text of the link describes the purpose of the link.', 'H30');
 
     }
-};
+});

@@ -11,7 +11,7 @@
  *
  */
 
-window.HTMLCS.includedSniffs['WCAG2AAA.Principle3.Guideline3_1.3_1_5'] = {
+HTMLCS.addSniff('WCAG2AAA', 'Principle3.Guideline3_1.3_1_5', {
     /**
      * Determines the elements to register for processing.
      *
@@ -37,4 +37,4 @@ window.HTMLCS.includedSniffs['WCAG2AAA.Principle3.Guideline3_1.3_1_5'] = {
         HTMLCS.addMessage(HTMLCS.NOTICE, top, 'Where the content requires reading ability more advanced than the lower secondary education level, supplemental content or an alternative version should be provided.', 'G86,G103,G79,G153,G160');
 
     }
-};
+});

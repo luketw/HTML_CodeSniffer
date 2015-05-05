@@ -11,7 +11,7 @@
  *
  */
 
-window.HTMLCS.includedSniffs['WCAG2AAA.Principle3.Guideline3_2.3_2_1'] = {
+HTMLCS.addSniff('WCAG2AAA', 'Principle3.Guideline3_2.3_2_1', {
     /**
      * Determines the elements to register for processing.
      *
@@ -42,4 +42,4 @@ window.HTMLCS.includedSniffs['WCAG2AAA.Principle3.Guideline3_2.3_2_1'] = {
         HTMLCS.addMessage(HTMLCS.NOTICE, element, 'Check that a change of context does not occur when this input field receives focus.', 'G107');
 
     }
-};
+});

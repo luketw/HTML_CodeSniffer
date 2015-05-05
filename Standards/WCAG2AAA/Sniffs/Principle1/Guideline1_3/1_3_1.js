@@ -11,7 +11,7 @@
  *
  */
 
-window.HTMLCS.includedSniffs['WCAG2AAA.Principle1.Guideline1_3.1_3_1'] = {
+HTMLCS.addSniff('WCAG2AAA', 'Principle1.Guideline1_3.1_3_1', {
     _labelNames: null,
 
     register: function()
@@ -814,4 +814,4 @@ window.HTMLCS.includedSniffs['WCAG2AAA.Principle1.Guideline1_3.1_3_1'] = {
             HTMLCS.addMessage(HTMLCS.NOTICE, table, 'This table appears to be a data table. If it is meant to instead be a layout table, ensure there are no th elements, and no summary or caption.', 'DataTable');
         }
     }
-};
+});

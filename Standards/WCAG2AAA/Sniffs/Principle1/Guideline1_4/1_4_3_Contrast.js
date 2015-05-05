@@ -11,7 +11,7 @@
  *
  */
 
-window.HTMLCS.includedSniffs['WCAG2AAA.Principle1.Guideline1_4.1_4_3_Contrast'] = {
+HTMLCS.addSniff('WCAG2AAA', 'Principle1.Guideline1_4.1_4_3_Contrast', {
     testContrastRatio: function (top, minContrast, minLargeContrast)
     {
         var startDate = new Date();
@@ -274,4 +274,4 @@ window.HTMLCS.includedSniffs['WCAG2AAA.Principle1.Guideline1_4.1_4_3_Contrast'] 
         var newColour = HTMLCS.util.RGBtoColourStr(HTMLCS.util.HSVtosRGB(hsvColour));
         return newColour;
     }
-}
+});

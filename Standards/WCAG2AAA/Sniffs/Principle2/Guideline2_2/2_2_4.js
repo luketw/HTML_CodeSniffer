@@ -11,7 +11,7 @@
  *
  */
 
-window.HTMLCS.includedSniffs['WCAG2AAA.Principle2.Guideline2_2.2_2_4'] = {
+HTMLCS.addSniff('WCAG2AAA', 'Principle2.Guideline2_2.2_2_4', {
     /**
      * Determines the elements to register for processing.
      *
@@ -37,4 +37,4 @@ window.HTMLCS.includedSniffs['WCAG2AAA.Principle2.Guideline2_2.2_2_4'] = {
         HTMLCS.addMessage(HTMLCS.NOTICE, element, 'Check that all interruptions (including updates to content) can be postponed or suppressed by the user, except interruptions involving an emergency.', 'SCR14');
 
     }
-};
+});

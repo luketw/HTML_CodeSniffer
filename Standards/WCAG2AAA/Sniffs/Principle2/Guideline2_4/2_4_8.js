@@ -11,7 +11,7 @@
  *
  */
 
-window.HTMLCS.includedSniffs['WCAG2AAA.Principle2.Guideline2_4.2_4_8'] = {
+HTMLCS.addSniff('WCAG2AAA', 'Principle2.Guideline2_4.2_4_8', {
     /**
      * Determines the elements to register for processing.
      *
@@ -52,4 +52,4 @@ window.HTMLCS.includedSniffs['WCAG2AAA.Principle2.Guideline2_4.2_4_8'] = {
             HTMLCS.addMessage(HTMLCS.ERROR, element, 'Link element is missing a non-empty href attribute pointing to the resource being linked.', 'H59.2b');
         }
     }
-};
+});

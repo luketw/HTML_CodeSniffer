@@ -11,7 +11,7 @@
  *
  */
 
-window.HTMLCS.includedSniffs['WCAG2AAA.Principle3.Guideline3_3.3_3_3'] = {
+HTMLCS.addSniff('WCAG2AAA', 'Principle3.Guideline3_3.3_3_3', {
     /**
      * Determines the elements to register for processing.
      *
@@ -38,4 +38,4 @@ window.HTMLCS.includedSniffs['WCAG2AAA.Principle3.Guideline3_3.3_3_3'] = {
         // The techniques in 3.3.1 are also listed in this Success Criterion.
         HTMLCS.addMessage(HTMLCS.NOTICE, element, 'Check that this form provides suggested corrections to errors in user input, unless it would jeopardize the security or purpose of the content.', 'G177');
     }
-};
+});

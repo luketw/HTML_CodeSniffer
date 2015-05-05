@@ -11,7 +11,7 @@
  *
  */
 
-window.HTMLCS.includedSniffs['WCAG2AAA.Principle1.Guideline1_3.1_3_2'] = {
+HTMLCS.addSniff('WCAG2AAA', 'Principle1.Guideline1_3.1_3_2', {
     /**
      * Determines the elements to register for processing.
      *
@@ -37,4 +37,4 @@ window.HTMLCS.includedSniffs['WCAG2AAA.Principle1.Guideline1_3.1_3_2'] = {
         HTMLCS.addMessage(HTMLCS.NOTICE, top, 'Check that the content is ordered in a meaningful sequence when linearised, such as when style sheets are disabled.', 'G57');
 
     }
-};
+});

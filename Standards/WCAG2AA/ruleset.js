@@ -11,8 +11,8 @@
  *
  */
 
-window.HTMLCS.includedStandards['WCAG2AA'] = {
-    name: 'WCAG2AA',
+HTMLCS.addStandard('WCAG2AA', {
+    name: 'WCAG 2.0 Double-A',
     description: 'Web Content Accessibility Guidelines (WCAG) 2.0 AA',
     sniffs: [
         {
@@ -62,6 +62,6 @@ window.HTMLCS.includedStandards['WCAG2AA'] = {
         }
     ],
     getMsgInfo: function(code) {
-        return HTMLCS_WCAG2AAA.getMsgInfo(code);
+        return HTMLCS.getStandard('WCAG2AAA').getMsgInfo(code);
     }
-};
+});

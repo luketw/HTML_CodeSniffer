@@ -11,7 +11,7 @@
  *
  */
 
-window.HTMLCS.includedSniffs['Section508.M'] = {
+HTMLCS.addSniff('Section508', 'M', {
     /**
      * Determines the elements to register for processing.
      *
@@ -44,4 +44,4 @@ window.HTMLCS.includedSniffs['Section508.M'] = {
         HTMLCS.addMessage(HTMLCS.NOTICE, element, 'If external media requires a plugin or application to view, ensure a link is provided to a plugin or application that complies with Section 508 accessibility requirements for applications.', 'PluginLink');
     }
 
-};
+});

@@ -11,7 +11,7 @@
  *
  */
 
-window.HTMLCS.includedSniffs['WCAG2AAA.Principle3.Guideline3_2.3_2_4'] = {
+HTMLCS.addSniff('WCAG2AAA', 'Principle3.Guideline3_2.3_2_4', {
     /**
      * Determines the elements to register for processing.
      *
@@ -37,4 +37,4 @@ window.HTMLCS.includedSniffs['WCAG2AAA.Principle3.Guideline3_2.3_2_4'] = {
         HTMLCS.addMessage(HTMLCS.NOTICE, top, 'Check that components that have the same functionality within this Web page are identified consistently in the set of Web pages to which it belongs.', 'G197');
 
     }
-};
+});

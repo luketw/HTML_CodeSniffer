@@ -11,7 +11,7 @@
  *
  */
 
-window.HTMLCS.includedSniffs['WCAG2AAA.Principle3.Guideline3_2.3_2_2'] = {
+HTMLCS.addSniff('WCAG2AAA', 'Principle3.Guideline3_2.3_2_2', {
     /**
      * Determines the elements to register for processing.
      *
@@ -55,4 +55,4 @@ window.HTMLCS.includedSniffs['WCAG2AAA.Principle3.Guideline3_2.3_2_2'] = {
             HTMLCS.addMessage(HTMLCS.ERROR, form, 'Form does not contain a submit button (input type="submit", input type="image", or button type="submit").', 'H32.2');
         }
     }
-};
+});

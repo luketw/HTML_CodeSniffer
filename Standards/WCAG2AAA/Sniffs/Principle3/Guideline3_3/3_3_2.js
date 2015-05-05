@@ -11,7 +11,7 @@
  *
  */
 
-window.HTMLCS.includedSniffs['WCAG2AAA.Principle3.Guideline3_3.3_3_2'] = {
+HTMLCS.addSniff('WCAG2AAA', 'Principle3.Guideline3_3.3_3_2', {
     /**
      * Determines the elements to register for processing.
      *
@@ -39,4 +39,4 @@ window.HTMLCS.includedSniffs['WCAG2AAA.Principle3.Guideline3_3.3_3_2'] = {
         // other Success Criteria (eg. 1.3.1, 4.1.2).
         HTMLCS.addMessage(HTMLCS.NOTICE, element, 'Check that descriptive labels or instructions (including for required fields) are provided for user input in this form.', 'G131,G89,G184,H90');
     }
-};
+});

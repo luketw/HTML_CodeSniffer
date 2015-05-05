@@ -11,7 +11,7 @@
  *
  */
 
-window.HTMLCS.includedSniffs['WCAG2AAA.Principle1.Guideline1_2.1_2_8'] = {
+HTMLCS.addSniff('WCAG2AAA', 'Principle1.Guideline1_2.1_2_8', {
     /**
      * Determines the elements to register for processing.
      *
@@ -42,4 +42,4 @@ window.HTMLCS.includedSniffs['WCAG2AAA.Principle1.Guideline1_2.1_2_8'] = {
         HTMLCS.addMessage(HTMLCS.NOTICE, element, 'If this embedded object contains pre-recorded synchronised media or video-only content, check that an alternative text version of the content is provided.', 'G69,G159');
 
     }
-};
+});

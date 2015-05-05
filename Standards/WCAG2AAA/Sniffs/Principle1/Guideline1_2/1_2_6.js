@@ -11,7 +11,7 @@
  *
  */
 
-window.HTMLCS.includedSniffs['WCAG2AAA.Principle1.Guideline1_2.1_2_6'] = {
+HTMLCS.addSniff('WCAG2AAA', 'Principle1.Guideline1_2.1_2_6', {
     /**
      * Determines the elements to register for processing.
      *
@@ -42,4 +42,4 @@ window.HTMLCS.includedSniffs['WCAG2AAA.Principle1.Guideline1_2.1_2_6'] = {
         HTMLCS.addMessage(HTMLCS.NOTICE, element, 'If this embedded object contains pre-recorded synchronised media, check that a sign language interpretation is provided for its audio.', 'G54,G81');
 
     }
-};
+});

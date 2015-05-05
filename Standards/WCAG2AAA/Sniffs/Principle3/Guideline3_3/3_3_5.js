@@ -11,7 +11,7 @@
  *
  */
 
-window.HTMLCS.includedSniffs['WCAG2AAA.Principle3.Guideline3_3.3_3_5'] = {
+HTMLCS.addSniff('WCAG2AAA', 'Principle3.Guideline3_3.3_3_5', {
     /**
      * Determines the elements to register for processing.
      *
@@ -36,4 +36,4 @@ window.HTMLCS.includedSniffs['WCAG2AAA.Principle3.Guideline3_3.3_3_5'] = {
     {
         HTMLCS.addMessage(HTMLCS.NOTICE, element, 'Check that context-sensitive help is available for this form, at a Web-page and/or control level.', 'G71,G184,G193');
     }
-};
+});

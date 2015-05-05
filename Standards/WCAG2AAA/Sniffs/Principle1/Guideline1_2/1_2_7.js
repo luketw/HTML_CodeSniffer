@@ -11,7 +11,7 @@
  *
  */
 
-window.HTMLCS.includedSniffs['WCAG2AAA.Principle1.Guideline1_2.1_2_7'] = {
+HTMLCS.addSniff('WCAG2AAA', 'Principle1.Guideline1_2.1_2_7', {
     /**
      * Determines the elements to register for processing.
      *
@@ -43,4 +43,4 @@ window.HTMLCS.includedSniffs['WCAG2AAA.Principle1.Guideline1_2.1_2_7'] = {
         HTMLCS.addMessage(HTMLCS.NOTICE, element, 'If this embedded object contains synchronised media, and where pauses in foreground audio is not sufficient to allow audio descriptions to convey the sense of pre-recorded video, check that an extended audio description is provided, either through scripting or an alternate version.', 'G8');
 
     }
-};
+});

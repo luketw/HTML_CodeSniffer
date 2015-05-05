@@ -11,7 +11,7 @@
  *
  */
 
-window.HTMLCS.includedSniffs['WCAG2AAA.Principle1.Guideline1_3.1_3_1_A'] = {
+HTMLCS.addSniff('WCAG2AAA', 'Principle1.Guideline1_3.1_3_1_A', {
     _labelNames: null,
 
     register: function()
@@ -37,4 +37,4 @@ window.HTMLCS.includedSniffs['WCAG2AAA.Principle1.Guideline1_3.1_3_1_A'] = {
         }
 
     }
-};
+});

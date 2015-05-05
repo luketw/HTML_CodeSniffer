@@ -150,8 +150,8 @@ var HTMLCSAuditor = new function()
     var buildHeaderSection = function(standard, wrapper) {
         var header       = _doc.createElement('div');
         header.className = _prefix + 'header';
-        header.innerHTML = 'HTML_CodeSniffer by Squiz';
-        header.setAttribute('title', 'Using standard ' + standard);
+        header.innerHTML = HTMLCS.loc._('HTML_CodeSniffer by Squiz');
+        header.setAttribute('title', HTMLCS.loc._('Using standard %1', HTMLCS.getStandard(standard).name));
 
         var dragging = false;
         var prevX    = 0;

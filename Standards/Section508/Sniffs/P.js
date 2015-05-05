@@ -11,7 +11,7 @@
  *
  */
 
-window.HTMLCS.includedSniffs['Section508.P'] = {
+HTMLCS.addSniff('Section508', 'P', {
     /**
      * Determines the elements to register for processing.
      *
@@ -56,4 +56,4 @@ window.HTMLCS.includedSniffs['Section508.P'] = {
         }//end if
     }
 
-};
+});

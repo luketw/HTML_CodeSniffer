@@ -11,7 +11,7 @@
  *
  */
 
-window.HTMLCS.includedSniffs['WCAG2AAA.Principle2.Guideline2_1.2_1_2'] = {
+HTMLCS.addSniff('WCAG2AAA', 'Principle2.Guideline2_1.2_1_2', {
     /**
      * Determines the elements to register for processing.
      *
@@ -41,4 +41,4 @@ window.HTMLCS.includedSniffs['WCAG2AAA.Principle2.Guideline2_1.2_1_2'] = {
         HTMLCS.addMessage(HTMLCS.WARNING, element, 'Check that this applet or plugin provides the ability to move the focus away from itself when using the keyboard.', 'F10');
 
     }
-};
+});
