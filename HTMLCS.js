@@ -1540,6 +1540,7 @@ HTMLCS.loc = {
         if (typeof(self.availableLanguages[language]) !== "undefined") {
             self.language = language;
         }// End if
+        
     },// End setLanguage
 
     /**
@@ -1554,6 +1555,7 @@ HTMLCS.loc = {
         var self = this;
         self.translations[country_code] = {strings: translations};
         self.availableLanguages[country_code] = description;
+
     },// End addLanguage
 
     /**
@@ -1578,6 +1580,7 @@ HTMLCS.loc = {
             }// End if
             return self._parseArgs(args[0],args.slice(1));
         }// End if
+
     },// End translate
 
     /**
@@ -1620,6 +1623,7 @@ HTMLCS.loc = {
                 return self._parseArgs(plural,args.slice(3));
             }
         }// End if
+
     },// End translate
 
     /**
@@ -1639,6 +1643,7 @@ HTMLCS.loc = {
             });
         }// End if
         return text;
+
     },// End _parseArgs
 
     /**
@@ -1654,6 +1659,7 @@ HTMLCS.loc = {
             typeof(self.translations[self.language].strings) !== "undefined" &&
             typeof(self.translations[self.language].strings[text]) !== "undefined" &&
             self.translations[self.language].strings[text] !== "");
-    },// End hasTranslation
+
+    }// End hasTranslation
 
 };
