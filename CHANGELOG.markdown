@@ -24,28 +24,34 @@ old version number is in brackets.
 
     - Standards are now included by HTMLCS.addStandard and retrieved by HTMLCS.getStandard:
 
-        > OLD: var HTMLCS_WCAG2AAA = {...standard object...};
-        > NEW: HTMLCS.addStandard('WCAG2AAA', {...standard object...});
-        >
-        > OLD: var std = window['HTMLCS_WCAG2AAA'];
-        > NEW: var std = HTMLCS.getStandard('WCAG2AAA');
+        ```
+        OLD: var HTMLCS_WCAG2AAA = {...standard object...};
+        NEW: HTMLCS.addStandard('WCAG2AAA', {...standard object...});
+        
+        OLD: var std = window['HTMLCS_WCAG2AAA'];
+        NEW: var std = HTMLCS.getStandard('WCAG2AAA');
+        ```
 
     - Sniffs are now included by HTMLCS.addSniff and retrieved by HTMLCS.getSniff:
 
-        > OLD: var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_2_1_2_1 = {...sniff object...};
-        > NEW: HTMLCS.addSniff('WCAG2AAA', 'Principle1.Guideline1_2.1_2_1', {...sniff object...});
-        >
-        > OLD: var sc1_3_1 = HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_3_1_3_1;
-        > NEW: var sc1_3_1 = HTMLCS.getSniff('WCAG2AAA', 'Principle1.Guideline1_3.1_3_1');
+        ```
+        OLD: var HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_2_1_2_1 = {...sniff object...};
+        NEW: HTMLCS.addSniff('WCAG2AAA', 'Principle1.Guideline1_2.1_2_1', {...sniff object...});
+        
+        OLD: var sc1_3_1 = HTMLCS_WCAG2AAA_Sniffs_Principle1_Guideline1_3_1_3_1;
+        NEW: var sc1_3_1 = HTMLCS.getSniff('WCAG2AAA', 'Principle1.Guideline1_3.1_3_1');
+        ```
 
     - The old methods of inclusion are still supported, but are not recommended.
 
 - Added localisation functions, which mostly follow the GNU gettext-style in function name:
 
-    > HTMLCS.loc._('English text');
-    > HTMLCS.loc._('Page %1 of %2', page, totalPages);
-    > HTMLCS.loc._n('One page', 'Multiple pages', totalPages);
-    > HTMLCS.loc._n('One page', '%1 pages', totalPages, totalPages);
+    ```
+    HTMLCS.loc._('English text');
+    HTMLCS.loc._('Page %1 of %2', page, totalPages);
+    HTMLCS.loc._n('One page', 'Multiple pages', totalPages);
+    HTMLCS.loc._n('One page', '%1 pages', totalPages, totalPages);
+    ```
 
 #### Standards
 
